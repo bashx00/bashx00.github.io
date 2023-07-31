@@ -138,18 +138,18 @@ footer {
 }
 
 :not(.menu)>ul {
-    list-style-type: none
+    list-style-type: none;
 }
 
 :not(.menu)>ul>li:before {
     content: "-";
-    margin-right: 9px
+    margin-right: 9px;
 }
 
 .menu {
     border-top: var(--border);
     border-bottom: var(--border);
-    margin-bottom: 25px
+    margin-bottom: 25px;
 }
 
 .menu ul {
@@ -157,7 +157,7 @@ footer {
     margin-bottom: 12px;
     padding-left: 0px;
     list-style-type: none;
-    text-align: right
+    text-align: right;
 }
 
 .menu ul li {
