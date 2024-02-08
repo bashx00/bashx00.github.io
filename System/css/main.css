@@ -1,0 +1,89 @@
+/* Définition des variables pour le système de couleurs */
+:root {
+    --color-background: #ffe5d9;
+    --color-title: #2ec4b6;
+    --color-paragraph: #c8b6ff;
+    --color-footer: #7b2cbf;
+}
+
+/* Styles pour le corps de la page */
+body {
+    min-height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Styles pour tous les éléments de la page */
+/*
+* {
+    font: inherit;
+    color: inherit;
+}
+*/
+
+/* Styles pour la grille de mise en page */
+.container {
+    display: grid;
+    grid-template: "...   NEON" auto "SYNTH SYNTH" auto/110px auto;
+}
+
+/* Styles pour l'effet neon */
+.neon {
+    grid-area: NEON;
+    z-index: 2;
+    font-family: "Mr Dafoe", cursive;
+    font-size: 150px;
+    font-weight: 100;
+    color: #ff00f0;
+    filter: drop-shadow(0 0 22px #ff00f0);
+    line-height: 1;
+    margin-bottom: -90px;
+    margin-top: 100px;
+    transform: rotateZ(-20deg);
+    transform-origin: center left;
+}
+
+
+/* Styles pour le texte neon-pink */
+.neon-pink {
+    color: #fa29ad;
+    text-shadow: 0 0 2px #0f0b0e, 0 0 5px #df0790, 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Styles pour les paragraphes */
+p {
+    position: absolute;
+    font-family: Audiowide;
+    font-family: courier;
+    font-family: "Orbitron", "VT323", monospace;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 12vw;
+    letter-spacing: 5px;
+    margin: 0 0 6rem 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Styles pour les éléments canvas */
+#canvas {
+    background-color: #c2fe0c;
+}
+
+#canvas2 {
+    background-color: transparent;
+    position: fixed;
+    top: 60%;
+    left: 20%;
+}
+
+#canvas3, #canvas4, #canvas5 {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
